@@ -1,0 +1,294 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Backgrounds for Different Pages */
+.home-bg {
+    background: url('home-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.perfumes-bg {
+    background: url('perfume_background.avif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.watches-bg {
+    background: url('watch_background.avif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.shoes-bg {
+    background: url('shoes_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.bags-bg {
+    background: url('bags-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.0);
+    border-radius: 10px;
+    padding: 100px 20px;
+    margin: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.product {
+    text-align: center;
+    max-width: 200px;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-top: 1px solid #eaeaea;
+}
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+}
+
+.contact label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #333;
+}
+
+.product-category {
+    text-align: center;
+    margin: 20px;
+}
+
+.product-category h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-category a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.product-category a:hover {
+    color: #000;
+}
+
+/* New Styles for Product Boxes in Grid Format */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.product-box {
+    text-align: center;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    width: 200px;
+    height: 300px; /* Added fixed height for consistency */
+    transition: box-shadow 0.3s;
+    overflow: hidden; /* Hide overflow */
+}
+
+.product-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire box while maintaining aspect ratio */
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.product-box img:hover {
+    transform: scale(1.05);
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.login-form input,
+.login-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-form button:hover {
+    background: #333;
+}
+
+.about-us {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us .about-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Styles for Each Company */
+.fogg {
+    background: rgba(240, 128, 128, 0.2); /* Light coral background for Fogg */
+}
+
+.engage {
+    background: rgba(135, 206, 250, 0.2); /* Light sky blue background for Engage */
+}
+
+.parkavenue {
+    background: rgba(144, 238, 144, 0.2); /* Light green background for Park Avenue */
+}
+
+.denver {
+    background: rgba(255, 223, 186, 0.2); /* Light peach background for Denver */
+}
+
+/* Example Usage */
+/* Add the corresponding class to the body or container elements to apply the styles */

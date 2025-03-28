@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume - Park Avenue</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        .product-box {
+            display: inline-block;
+            width: 200px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            transition: box-shadow 0.3s;
+            overflow: hidden;
+        }
+
+        .product-box img {
+            max-width: 100%;
+            max-height: 150px;
+            transition: transform 0.3s;
+        }
+
+        .product-box:hover {
+            border-color: #000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-box img:hover {
+            transform: scale(1.05);
+        }
+
+        .add-to-cart-btn {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .add-to-cart-btn:hover {
+            background: #333;
+        }
+
+        /* Styles for Park Avenue */
+        .parkavenue {
+            background: rgba(144, 238, 144, 0.2); /* Light green background for Park Avenue */
+        }
+    </style>
+</head>
+<body class="perfumes-bg">
+    <header>
+        <div class="logo">Lustré Vault</div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Park Avenue</h1>
+    <div class="product-box" onclick="window.location.href='product1.html'">
+        <img src="product1.jpg" alt="Product 1">
+        <p>Product 1</p>
+        <p>Price: $20</p>
+        <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
+    <div class="product-box" onclick="window.location.href='product2.html'">
+        <img src="product2.jpg" alt="Product 2">
+        <p>Product 2</p>
+        <p>Price: $25</p>
+        <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
+    <div class="product-box" onclick="window.location.href='product3.html'">
+        <img src="product3.jpg" alt="Product 3">
+        <p>Product 3</p>
+        <p>Price: $30</p>
+        <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
+    <div class="product-box" onclick="window.location.href='product4.html'">
+        <img src="product4.jpg" alt="Product 4">
+        <p>Product 4</p>
+        <p>Price: $35</p>
+        <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Lustré Vault. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

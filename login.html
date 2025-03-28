@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Luxury Brand</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="home-bg">
+    <header>
+        <div class="logo">Lustré Vault</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-form">
+        <h2>Login</h2>
+        <form id="loginForm" action="submit-login" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" value="Gujarat" readonly>
+
+            <label for="city">City</label>
+            <select id="city" name="city" required>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Surat">Surat</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Bhavnagar">Bhavnagar</option>
+                <option value="Jamnagar">Jamnagar</option>
+                <option value="Junagadh">Junagadh</option>
+                <option value="Gandhinagar">Gandhinagar</option>
+                <option value="Anand">Anand</option>
+                <option value="Navsari">Navsari</option>
+            </select>
+
+            <label for="pincode">PIN Code</label>
+            <input type="text" id="pincode" name="pincode" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Lustré Vault. All rights reserved.</p>
+    </footer>
+</body>
+</html>
