@@ -27,11 +27,14 @@ Welcome to **Lustre Vault**, a premier e-commerce platform for luxury enthusiast
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   g
+   git clone https://github.com/Vaishnavishah25/Lustre-Vault--Luxury-Brands.git
 
-![Homepage](./assets/homepage_screenshot.png)
+
+<img width="940" alt="HomePage" src="https://github.com/user-attachments/assets/596beae6-919a-4499-8603-aeea53b71db1" />
+
 *A sleek and elegant homepage showcasing the product categories.*
 
-![Product Page](./assets/product_page_screenshot.png)
+<img width="938" alt="ShopSection" src="https://github.com/user-attachments/assets/7a820f94-953e-47b1-ae21-eb651ccb8596" />
+
 *A detailed product page featuring luxury items from top brands.*
 
